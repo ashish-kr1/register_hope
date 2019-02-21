@@ -1,0 +1,59 @@
+<div class="container">
+  <div class="background" *ngIf="login">
+
+    <h1 class="display-4">Login</h1>
+    <hr>
+    <form (submit)="LoginSubmit()">
+      <div class="form-group">
+        <label for="email">
+          E-mail
+        </label>
+        <input class="form-control" type="email" placeholder="Enter Email" [(ngModel)]="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="psw">
+          Password
+        </label>
+        <input class="form-control" type="password" placeholder="Enter Password" [(ngModel)]="password" name="password"
+          required>
+      </div>
+      <div class="forget">
+        <span (click)="forgetPassword()">Forget password !!</span>
+      </div>
+      <input type="submit" class="btn btn-primary" value="Login" style="margin:20px 220px;">
+    </form>
+  </div>
+  <div *ngIf="forget">
+    <div class="background">
+      <h1 class="display-4">Forget Password</h1>
+      <hr>
+      <form (submit)="ForgetSubmit()">
+        <div class="form-group">
+          <label for="email">
+            E-mail
+          </label>
+          <input class="form-control" type="email" placeholder="Enter Email" [(ngModel)]="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="psw">
+            Password
+          </label>
+          <input class="form-control" type="password" placeholder="Enter Password" [(ngModel)]="password"
+            name="password" required>
+        </div>
+        <div class="form-group">
+          <label for="psw">
+            Confirm Password
+          </label>
+          <input class="form-control" type="password" placeholder="Retype Password" [(ngModel)]="cnfpassword"
+            name="cnfpassword" required>
+        </div>
+        <div class="forget">
+          <span (click)="againLogin()">Log In</span>
+        </div>
+        <input type="submit" class="btn btn-primary" value="Reset" style="margin:20px 220px;">
+      </form>
+    </div>
+  </div>
+
+</div>

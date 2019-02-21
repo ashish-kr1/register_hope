@@ -1,0 +1,59 @@
+
+<div class="container">
+  
+    <div class="background">
+  <form  [formGroup]="myForm" (ngSubmit)="AddUserDetails()">
+      
+      <h1 class="display-4">SignUp</h1>
+      <hr>
+      <div class="form-group">
+        <label>Name</label>
+        <input type="text"  required  formControlName="name" placeholder="Ashish" class="form-control">
+      </div>
+      
+      <div class="form-group">
+        <label>Email</label>
+        <input type="email" class="form-control" placeholder="xyz123@abc.com" formControlName="email">
+      </div>
+      <div class="form-group">
+        <label>Username</label>
+        <input type="text"  required  formControlName="username" placeholder="Enter as your Email ex: xyz123@" class="form-control">
+      </div>
+      
+      <div class="form-group">
+        <label>Phone no.</label>
+        <input type="number" class="form-control" placeholder="7004311256" formControlName="contact_no">
+      </div>
+      
+      <div class="form-group">
+        <label>Age</label>
+        <input type="number" class="form-control" placeholder="15 - 85" formControlName="age">
+      </div>
+
+      <div class="form-check-inline">
+        
+        <input type="radio" class="form-check-input" id="male"  value="male" name="gender" formControlName="gender"> 
+        <label class="form-check-label" for="male">Male</label>
+      </div>
+      
+      
+          <div class="form-check-inline">
+          <input type="radio" class="form-check-input" id="female" value="Female" name="gender" formControlName="gender">
+          <label class="form-check-label" for="female">Female</label>
+        </div>
+          <div class="form-group">
+          <label>Password</label>
+          <input type="password" class="form-control" formControlName="password">
+        </div>
+        
+        <div class="form-group">
+            <label>Confirm Password</label>
+            <input type="password" class="form-control" formControlName="Cnfpassword">
+          </div>
+          <div class="form-group">
+             <input type="submit" class="btn btn-primary" value="Submit">
+            </div>
+                
+  </form>
+  </div>
+</div>

@@ -1,0 +1,56 @@
+
+.container{ 
+  margin-top:0px;
+  padding-top:15px !important;
+
+}
+.background{
+  background: rgba(189, 180, 180, 0.41);
+  width:600px;
+  margin:0px auto;
+  box-shadow: 0px 4px 25px;
+  border-radius:8px;
+  
+}
+form{
+  max-width:600px;
+  margin: 0px auto 0px auto;
+  color:black;
+   
+}
+
+.display-4{
+  font-size: 35px;
+    /* margin-bottom: 20px; */
+    margin-left: 250px;
+    margin-right: auto;
+}
+
+.form-group{
+ max-width: 500px;
+  margin:0px auto;
+  /* padding:10px; */
+  
+}
+
+
+form .col-md-3{
+  margin:0px;
+
+  padding:0px;
+}
+
+.btn-primary{
+  margin-left:200px;
+}
+
+.form-check-inline{
+  margin:20px 10px 20px 60px;
+ 
+}
+
+@media (max-width:768px){
+  .background{
+    width:100%;
+  }
+}
